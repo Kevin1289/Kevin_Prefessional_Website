@@ -1,0 +1,595 @@
+#intro_title{
+    text-align: center;
+}   
+
+#fall_background {
+    background: url("/static/images/fall_pic.png") no-repeat fixed ;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/fall_pic.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/fall_pic.jpg', sizingMethod='scale');
+    margin-bottom: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: -1;
+}  
+
+#title_text {
+    position: absolute;
+    display: block;
+    color: rgb(50, 50, 50);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    width: 44vw;
+    background-color: white;
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(238, 74, 14);
+}
+
+.title {
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family:sans-serif;
+}
+
+#title_name{
+    font-size: 4em;
+}
+
+#title_hr{
+    margin-left:3%; 
+    margin-right:3%; 
+    background-color:rgb(193, 188, 188);
+}
+
+#down_arrow{
+    font-size:5em;color:rgb(238, 74, 14); 
+    animation: arrow_vertical 1s infinite; 
+}
+
+#title_arrow_wrapper {
+    position: absolute;
+    bottom: 0px;
+    margin: auto;
+    width: 100%;
+    z-index: 2;
+}
+
+.under_title{
+    background-color: white;
+}
+
+.section_header{
+    text-align: center;
+    padding-top: 2%; 
+}
+
+.section_header_title{
+    font-family: 'Open Sans', sans-serif !important; 
+    font-size: 3.5em; 
+    color:rgb(238, 74, 14); 
+}
+
+.section_header_quote{
+    font-size: 1.3em; 
+    color:#727878;
+}
+
+.section_body{
+    padding-left: 15%; 
+    padding-right: 15%;
+}
+#title_next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    height: 25vh;
+    width: 100%;
+    opacity: .1;
+    background-color: #e41b00; 
+    z-index: 3;
+}
+
+#projects_list{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 2%;
+}
+
+.project_img{
+    height: 20vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+.projects_subtitles {
+    color: rgb(238, 74, 14);
+    font-size: 1.7em;
+    padding-bottom: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#profile_pic{            
+    grid-area: profile_pic;
+}
+
+#profile_pic_img{
+    border-radius: 50%; 
+    padding-top: 5%
+}
+
+.overlay { 
+    background-color: #e2988e; 
+    position: absolute; 
+    top: 0px; bottom: 0px; 
+    left: 0px; 
+    right: 0px; 
+    opacity: 0.50; 
+    height: 100vh;
+    filter:alpha(opacity=75); 
+    z-index: 1; 
+}
+
+.regular_text{
+    font-size: 1em;
+}
+
+@keyframes arrow_vertical {
+    0%   {padding-bottom: 3vh;}
+    50%  {padding-bottom: 5vh;}
+    100% {padding-bottom: 3vh;}
+}       
+
+#projects {
+    font-size: 1em;
+}
+
+.projects_subtitles {
+    color: rgb(238, 74, 14);
+    font-size: 1.7em;
+    padding-bottom: 10px;
+}
+
+.about_me_title{
+    padding-top: 2em;
+    display: grid;
+    grid-gap: 3vw;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: auto;
+    grid-template-areas: "info  profile_pic  about_me";
+}
+
+#about_me{
+    grid-area: about_me;
+}
+
+#experience{
+    background-color: #fce1d6;
+}
+
+
+.resume_title{
+    display: grid;
+    grid-gap: 5%;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 30% 15% 25% 25%;
+    grid-template-areas: 
+    "a b b b";
+}
+
+.resume_a{
+    grid-area: a;   
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 1.5em;
+    color:rgb(238, 74, 14);
+    padding-top: 20px;
+    padding-bottom: 2%;
+}
+
+.resume_b{
+    margin-top: 22px;
+    grid-area: b;
+    padding-right: 13%
+}
+
+#resume_icon{
+    font-size: 25px; 
+    padding-right: 15px;
+}
+
+.b_title{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1em; 
+    font-weight: bold;
+}
+
+.section_title{
+    font-family: 'Open Sans', sans-serif !important;
+     font-size: 1.5em;
+     color:rgb(238, 74, 14);
+    padding-top: 20px;
+
+}
+
+.grid_left_title{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2em; 
+    font-weight: bold;
+}
+
+.grid_left_link{
+    padding-left: 5px;
+}
+
+.grid_left_time{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1em;
+    
+}
+#info{
+    grid-area: info;
+}
+
+
+
+#careersShow{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+
+body {
+    font-family: sans-serif !important;
+    color:rgb(94, 94, 94)
+}
+
+.experience_title{
+    padding-top: 2%;
+    display: grid;
+    grid-gap: 3%;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 10% 10% 5% 20% 20% 20% 10%;
+    /* grid-template-columns: 30% 15% 25% 25%; */
+    grid-template-areas: 
+    "c a a b b b b";
+}
+
+.experience_a{
+    grid-area: a;   
+}
+
+.experience_b{
+    padding-top: 4.5px;
+    grid-area: b;
+    padding-right: 13%
+}
+
+.experience_c{
+    grid-area: c;  
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    min-height: 120px;
+
+}
+
+.experience_c[size="Large"]{
+    grid-area: c;  
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 150% 100%;
+    background-position: center;
+}
+
+.experience_c[size="Squash"]{
+    grid-area: c;  
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: center;
+}
+
+.experience_c[size="None"]{
+    grid-area: c;  
+    outline: 2px solid black;
+}
+
+.projects_title{
+    padding-top: 4%;
+    display: grid;
+    grid-gap: 5%;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 30% 15% 25% 25%;
+    grid-template-areas: 
+    "a b b b";
+}
+
+.projects_a{
+    grid-area: a;   
+}
+
+.projects_b{
+    grid-area: b;
+    padding-right: 13%;
+    padding-top: 5vh;
+}
+
+#contact{
+    background-color: #eb5920;
+}
+
+.contact_header_title{
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 3.5em;
+    color:white;
+}
+
+.contact_header_quote{
+    font-size: 1.3em;
+     color:white; 
+}
+
+.contact_body{
+    padding-left: 15%; 
+    padding-right: 15%; 
+    padding-bottom: 2%;
+}
+
+.contact_title{
+    padding-top: 2%;
+    display: grid;
+    grid-gap: 5%;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-areas: 
+    "a b c d";
+    color: white;
+}
+
+.contact_a{
+    grid-area: a; 
+    text-align: center;  
+}
+
+.contact_b{
+    grid-area: b;
+    text-align: center; 
+}
+
+.contact_c{
+    grid-area: c;   
+    text-align: center; 
+}
+
+.contact_d{
+    grid-area: d;
+    text-align: center; 
+    padding-right: 13%
+}
+
+#contact_icon{
+    font-size: 25px;
+}
+
+.contact_icon_text{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2em; 
+    padding-left: 10px
+}
+
+#indeed_logo{
+    margin-bottom: 15px;
+    height: 35px; 
+    width: 35px; 
+}
+
+#indeed_text{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2em; 
+    margin-right: 13%;
+}
+
+.white_link{
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#para1 {
+    text-align: center;
+    color: red;
+  }
+
+.para1 {
+    text-align: center;
+    color: red;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.h2 {
+    margin: 60px;
+    text-align: justify;
+}
+
+#background{
+    background-image: url("/static/images/background_img.jpg");
+}
+#Kevin_Sec{
+    background-image: url("/static/images/background_img.jpg");
+    /* display: flex; */
+    justify-content: center;
+}
+
+#Slide1{
+    display: flex;
+    justify-content: center;
+}
+
+#Slide1 > div {
+    width: 90%;
+    margin: 8%;
+    text-align: center;
+    line-height: 100%;
+    font-size: 40px;
+}
+
+#Slide2{
+    display: flex;
+    justify-content: center;
+}
+
+#Slide2 > div{
+    width: 70%;
+    margin: 4%;
+    text-align: center;
+    line-height: 100%;
+    font-size: 40px;
+}
+
+
+#Slide3{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 0;
+}
+
+#slide3_title{
+    text-align: center;
+    line-height: 1vw;
+    font-size: 40px;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: 1s;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+}
+#profile-pic{
+    border-radius: 100%;
+    width: 33vw;
+    /* height: auto; */
+    /* width: 150%;
+    border-radius: 100%; */
+    margin-left: 3vw;
+    /* padding-top: 0%; */
+}
+
+#white_text{
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+#text{
+    color:#a3d31e;
+    line-height: 1.6;
+    font-size: 2.3vw;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+} 
+
+#chart_wrap{
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    overflow:hidden;
+}
+
+#piechart_3d {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width:10vw;
+    height:10vw;
+    /* height:500px; */
+}
+
