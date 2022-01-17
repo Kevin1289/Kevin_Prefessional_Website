@@ -62,6 +62,14 @@
                 x.style.display = "none";
             }
         }
+
+        const test = () => {
+            return(
+                <div>
+                    <b> TESTER TEXT</b>
+                </div>
+            )
+        }
     </script>
     
 </head>
@@ -248,7 +256,7 @@
         </div>
     </div>
 
-    <div id='projects'  >
+    <div id='projects'>
         <div class='section_header' >
             <t class='section_header_title' >Projects</t><br/>
             <t class='section_header_quote'>"You don't learn to walk by following rules. You learn by doing, and by falling over."<br/>- Richard Branson</t>
@@ -275,6 +283,54 @@
         </div>
     </div>
 
+    <div class="skill" >
+        <div class='section_header' >
+            <t class='section_header_title' >Skills</t><br/>
+            <t class='section_header_quote' >"Never chase opportunities. Let it come to you by creating value and building rare skillsets."<br/>- Johannes Larsson</t>
+        </div>
+        <div class='section_body'>
+            <hr/>
+            <div class='skills_wrapper' >
+                <div class="skill_outter_wrapper"> 
+                    <div class='skill_title'>Programming Languages</div>
+                    <div class="skill_wrapper"> 
+                        {% for language in language_skills %}
+                        <div class="skill_component" > 
+                            <div class="skill_text"> 
+                                    {{language.name}}
+                            </div>
+                            <div class="skill_rating"> 
+                                <progress value="{{language.years}}" max="6"> {{language.years}} Years </progress>
+                            </div>
+                        </div>
+
+                        {% endfor %}
+                    </div>
+
+                </div>
+                <div class="skill_outter_wrapper"> 
+                    <div class='skill_title'>Programming Tools</div>
+                        <div class="skill_wrapper"> 
+                            {% for tool in programming_tools %}
+
+                            <div class="skill_component"> 
+                                <div class="skill_text"> 
+                                    {{tool.name}}
+                                </div>
+                                <div class="skill_rating"> 
+                                    <progress id="file" value="{{tool.years}}" max="6"> {{tool.years}} Years </progress>
+
+                                </div>
+                            </div>
+
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
      
     <div id='contact' >
         <div class='section_header'>

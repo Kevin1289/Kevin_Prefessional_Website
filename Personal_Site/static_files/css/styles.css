@@ -114,12 +114,6 @@
     padding-bottom: 2%;
 }
 
-.project_img{
-    height: 20vh;
-    width: 100%;
-    object-fit: contain;
-}
-
 .projects_subtitles {
     color: rgb(238, 74, 14);
     font-size: 1.7em;
@@ -211,7 +205,7 @@
 .resume_b{
     margin-top: 22px;
     grid-area: b;
-    padding-right: 13%
+    padding-right: 13%;
 }
 
 #resume_icon{
@@ -331,7 +325,20 @@ body {
 }
 
 .projects_a{
-    grid-area: a;   
+    grid-area: a;  
+    max-height: 20vh;
+    max-width: 100%; 
+}
+
+.project_img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    block-size: fit-content;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .projects_b{
@@ -419,6 +426,121 @@ body {
 .white_link{
     color:white;
 }
+
+.skill{
+    background-color: #fce1d6;
+}
+
+.skills_wrapper{
+    padding-top: 2em;
+    display: grid;
+    grid-gap: 3vw;
+    grid-template-rows: 47% 47%;
+    grid-template-columns: auto;
+    grid-template-areas: "language software";
+}
+
+.skill_component {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.skill_component:hover{
+    padding: 5px;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fad0bf !important;
+    
+}
+
+.skill_outter_wrapper {
+    block-size: fit-content;
+}
+
+.skill_wrapper {
+    display:flex;
+    flex-direction: column;
+    /* background-color: #D6F1FC; */
+    block-size: fit-content;
+    padding: 5px;
+    min-width: 60%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.skill_text{
+    display: block;
+    min-width:40%;
+    overflow-wrap:normal;
+    text-align: left;
+}
+
+.skill_rating{
+    width: 60%;
+    overflow: hidden;
+    display: block;
+    block-size: fit-content;
+    align-content: right;
+    
+}
+
+.skill_title {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 1.5em;
+    color:rgb(238, 74, 14);
+    padding-top: 20px;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+progress {
+    align-self: right;
+    display: block;
+    width: 100%;
+    background: rgb(238, 74, 14);
+    border-radius: 5px;
+}
+
+progress {
+    width: 100%;
+    align-self: right;
+    display: block;
+    color: lightblue;
+    border-radius: 5px;
+
+}
+
+progress::-webkit-progress-value {
+    background: rgb(238, 74, 14);
+    border-radius: 5px;
+
+}
+
+progress::-webkit-progress-bar {
+    background: white;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

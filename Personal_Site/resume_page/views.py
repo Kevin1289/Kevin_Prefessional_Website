@@ -29,8 +29,44 @@ def home_page(request):
         {'image': '/images/personal_website.png', 'image_alt':'Personal Website', 'name': 'Professional Website (Sept 2021)', 'link': 'http://kevinwu.pythonanywhere.com/', 'description': 'Created a Website using Django for others to learn about my story. Used Django\'s built-in python web server. ', 'used': 'Utilized: Python, HTML, CSS.' },
         {'image': '/images/weatherman_logo.png', 'image_alt':'Weatherman', 'name': 'Weatherman', 'link': 'https://weatheruser-ce3d4.web.app/', 'description': 'Launched a platform for adventurists to check the weather by implementing an API. This platform also establishes a community for users to share stories and inspire others.', 'used':' Utilize: React.js, JavaScript, HTML, Firebase, CSS.' },
         {'image': '/images/clique_logo.png', 'image_alt':'Clique Logo', 'name': 'Clique (Aug 2020)', 'link': 'https://github.com/Kevin1289/Clique.io_site', 'description': 'Worked on a team to build a Website to connect students and employers using the Django framework. Performed backend and frontend work and oversaw communication between backend and frontend teams. ', 'used':'Utilized: Python, HTML, CSS, PostgreSQL.' },
-        {'image': '/images/mta.png', 'image_alt':'MTA Logo', 'name': 'Train Customer Support System (Sept 2019)', 'link': 'http://127.0.0.1:8000/login/', 'description': 'Developed a program featuring the abilities to explore train stops and to find common train stops, allowing for a easier navigation of NYC\'s complicated train routes. Users are also able to create accounts, where their past searches are saved.', 'used':'Utilized: Python, Django' },
+        {'image': '/images/mtaLogo.png', 'image_alt':'MTA Logo', 'name': 'Train Customer Support System (Sept 2019)', 'link': 'http://127.0.0.1:8000/login/', 'description': 'Developed a program featuring the abilities to explore train stops and to find common train stops, allowing for a easier navigation of NYC\'s complicated train routes. Users are also able to create accounts, where their past searches are saved.', 'used':'Utilized: Python, Django' },
         {'image': '/images/iFeeder_pic.jpg', 'image_alt':'iFeeder', 'name': 'iFeeder - The Automatic Pet Feeder (Sept 2019)', 'link': 'http://127.0.0.1:8000/iFeeder', 'description': 'Played the role of the Chief Hardware Engineer and Chief Designer & Programmer. Designed a self-sufficient, innovative, and cost-efficient product with the ability to dispense food, water, and snacks for a variety of pets. Created professional marketing pitch, prototype, program, advertisement. ', 'used':'Utilized: C++, Autodesk Fusion 360, Arduino IDE, Microsoft Office, Cura, Adobe Illustrator ' },
+    ]
+
+    language_skills = [
+        {'name': 'Python', 'years': 5,},
+        {'name': 'JavaScript', 'years': 4,},
+        {'name': 'SQL', 'years': 3,},
+        {'name': 'TypeScript', 'years': 2,},
+        {'name': 'C++', 'years': 3,},
+        {'name': 'C', 'years': 2,},
+        {'name': 'HTML', 'years': 5,},
+        {'name': 'CSS', 'years': 5,},
+    ]
+
+    programming_tools = [
+        {'name': 'React', 'years': 4,},
+        {'name': 'Django', 'years': 4,},
+        {'name': 'Express', 'years': 4,},
+        {'name': 'Node.js', 'years': 4,},
+        {'name': 'MySQL', 'years': 3,},
+        {'name': 'MSSQL', 'years': 3,},
+        {'name': 'PostgreSQL', 'years': 3,},
+        {'name': 'GraphQL', 'years': 2,},
+        {'name': 'React Native', 'years': 2,},
+        {'name': 'Firebase', 'years': 2,},
+    ]
+
+    software_skills = [
+        {'name': 'Git Hub', 'years': 5,},
+        {'name': 'Jira', 'years': 3,},
+        {'name': 'Jupiter Notebook', 'years': 2,},
+        {'name': 'Bitbucket', 'years': 1,},
+        {'name': 'Kubernetes', 'years': 1,},
+        {'name': 'Docker', 'years': 1,},
+        {'name': 'Tableau', 'years': 1,},
+        {'name': 'Microsoft Office', 'years': 7,},
+        {'name': 'Autodesk', 'years': 5,},
     ]
 
     params = (
@@ -39,7 +75,7 @@ def home_page(request):
     )
     response = requests.post('https://aztro.sameerkumar.website/', params=params)
     description = response.json()['description']
-    return render(request, 'resume_website/resume_page.html', {'description':description, 'experiences': experiences, 'career_recent': career[:3], 'career_old': career[3:], 'projects': projects })
+    return render(request, 'resume_website/resume_page.html', {'description':description, 'experiences': experiences, 'career_recent': career[:3], 'career_old': career[3:], 'projects': projects, 'language_skills':language_skills, 'programming_tools':programming_tools, 'software_skills':software_skills })
 
 def iFeeder(request):
     return render(request, 'resume_website/iFeeder_Home.html')
