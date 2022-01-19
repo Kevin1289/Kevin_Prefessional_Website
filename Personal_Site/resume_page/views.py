@@ -34,39 +34,39 @@ def home_page(request):
     ]
 
     language_skills = [
-        {'name': 'Python', 'years': 5,},
-        {'name': 'JavaScript', 'years': 4,},
-        {'name': 'SQL', 'years': 3,},
-        {'name': 'TypeScript', 'years': 2,},
-        {'name': 'C++', 'years': 3,},
-        {'name': 'C', 'years': 2,},
-        {'name': 'HTML', 'years': 5,},
-        {'name': 'CSS', 'years': 5,},
+        {'name': 'Python', 'nameTag': 'Python', 'years': 5, 'max': 5, 'description': "Classes, Algorythms, Scripting, Data Processing, Web Scraping, Serverside Application"},
+        {'name': 'HTML', 'nameTag': 'HTML', 'years': 5, 'max': 5, 'description': "UI Design"},
+        {'name': 'CSS', 'nameTag': 'CSS', 'years': 5, 'max': 5, 'description': "UI Design, Component Styling and Effects"},
+        {'name': 'JavaScript', 'nameTag': 'JavaScript', 'years': 4, 'max': 5, 'description': "Full-Stack Developement (Frontend and Backend), Classes & Functional Based Components, Web Developement Frameworks & Packages"},
+        {'name': 'SQL', 'nameTag': 'SQL', 'years': 3, 'max': 5, 'description': "Querying (Joins, Clauses, Subquery), Database Management, Database Design"},
+        {'name': 'C++', 'nameTag': 'C++', 'years': 3, 'max': 5, 'description': "Object Oriented Programming, Computer Architecture"},
+        {'name': 'TypeScript', 'nameTag': 'TypeScript', 'years': 2, 'max': 5, 'description': "Full-Stack Developement (Frontend and Backend), Class Based Components, Implementation with React & Express Frameworks"},
+        {'name': 'C', 'nameTag': 'C', 'years': 2, 'max': 5, 'description': "Scripting, Operating Systems"},
     ]
 
     programming_tools = [
-        {'name': 'React', 'years': 4,},
-        {'name': 'Django', 'years': 4,},
-        {'name': 'Express', 'years': 4,},
-        {'name': 'Node.js', 'years': 4,},
-        {'name': 'MySQL', 'years': 3,},
-        {'name': 'MSSQL', 'years': 3,},
-        {'name': 'PostgreSQL', 'years': 3,},
-        {'name': 'GraphQL', 'years': 2,},
-        {'name': 'React Native', 'years': 2,},
-        {'name': 'Firebase', 'years': 2,},
+        {'name': 'React', 'nameTag': 'React', 'years': 4, 'max': 4, 'description': "Consumer Targeted UI Design, React Hooks, DOM Manipulation & Event Handlers, Higher Order & Callback Functions, Inheritance, Class & Function Based Components, Implementation with Express, Node, MySQL, MSSQL, GraphQL, Typeorm"},
+        {'name': 'Express', 'nameTag': 'Express', 'years': 4, 'max': 4, 'description': "Serverside Organization & Efficiency, API Requests, Middleware Implementation, Database Implementation"},
+        {'name': 'Node.js', 'nameTag': 'Nodejs', 'years': 4, 'max': 4, 'description': "Web Application Frameworks, Security, Package Management, Source Control, Cloud Platforms"},
+        {'name': 'MySQL Workbench', 'nameTag': 'MySQLWorkbench', 'years': 3, 'max': 4, 'description': "SetUp with Remote Server, Database Management, Security"},
+        {'name': 'MSSQL Workbench', 'nameTag': 'MSSQLWorkbench', 'years': 3, 'max': 4, 'description': "SetUp with Remote Server, Database Management, Security"},
+        {'name': 'Django', 'nameTag': 'Django', 'years': 3, 'max': 4, 'description': "Serverside Organization & Efficiency, Encrypting By Hash, API Requests, PostgresSQL Database Implementation"},
+        {'name': 'React Native', 'nameTag': 'ReactNative', 'years': 2, 'max': 4, 'description': "Consumer Targeted UI Design, React Hooks, Functional Based Components"},
+        {'name': 'Firebase', 'nameTag': 'Firebase', 'years': 2, 'max': 4, 'description': "Database Management, Security, Database Hosting"},
+        {'name': 'GraphQL', 'nameTag': 'GraphQL', 'years': 1, 'max': 4, 'description': "Queries, Mutations, Backend Efficiency, Database Connection"},
+        {'name': 'Typeorm', 'nameTag': 'Typeorm', 'years': 1, 'max': 4, 'description': "Entities, Relations"},
     ]
 
     software_skills = [
-        {'name': 'Git Hub', 'years': 5,},
-        {'name': 'Jira', 'years': 3,},
-        {'name': 'Jupiter Notebook', 'years': 2,},
-        {'name': 'Bitbucket', 'years': 1,},
-        {'name': 'Kubernetes', 'years': 1,},
-        {'name': 'Docker', 'years': 1,},
-        {'name': 'Tableau', 'years': 1,},
-        {'name': 'Microsoft Office', 'years': 7,},
-        {'name': 'Autodesk', 'years': 5,},
+        {'name': 'Microsoft Office', 'nameTag': 'MicrosoftOffice', 'years': 6, 'max': 6, 'description': "Professional Presentation, Documentation"},
+        {'name': 'Autodesk', 'nameTag': 'Autodesk', 'years': 5, 'max': 6, 'description': "Autodesk Inventor, Professional Design of Mechanical Components, Simulations, Visualizations"},
+        {'name': 'Git Hub', 'nameTag': 'GitHub', 'years': 5, 'max': 6, 'description': "Git Commands, Version Control, Team Management, Security"},
+        {'name': 'Jira', 'nameTag': 'Jira', 'years': 3, 'max': 6, 'description': "Project Workflow Management, Team Progress, Task Assignment, Professional Dashboard Presentation"},
+        {'name': 'Jupiter Notebook', 'nameTag': 'JupiterNotebook', 'max': 6, 'years': 2, 'description': "SQl Implementation, Visualization"},
+        {'name': 'Bitbucket', 'nameTag': 'Bitbucket', 'years': 1, 'max': 6, 'description': "Git Commands, Version Control, Team Management, Security"},
+        {'name': 'Kubernetes', 'nameTag': 'Kubernetes', 'years': 1, 'max': 6, 'description': "Pod Management, Service Hosting, Resource Management"},
+        {'name': 'Docker', 'nameTag': 'Docker', 'years': 1, 'max': 6, 'description': "Container Initialization & Management"},
+        {'name': 'Tableau', 'nameTag': 'Tableau', 'years': 1, 'max': 6, 'description': "Data Analysis & Visualization"},
     ]
 
     params = (
