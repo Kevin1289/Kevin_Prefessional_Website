@@ -44,7 +44,7 @@ class UserLoginForm(forms.Form):
 				Q(email__iexact=query)
 			).distinct()
 		if not user_qs_final.exists() and user_qs_final.count != 1:
-			raise forms.ValidationError("Invalid credentials - user does note exist")
+			raise forms.ValidationError("Invalid credentials - user does not exist")
 		user_obj = user_qs_final.first()
 		if not user_obj.check_password(password):
 			raise forms.ValidationError("credentials are not correct")
