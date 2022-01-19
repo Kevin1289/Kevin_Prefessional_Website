@@ -15,6 +15,7 @@ SECRET_KEY = ')1ia3d3bt46)9+b%=^fwv-%j^nz*!2ww+-*z3^5$+k+bagmo&2'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['KevinWu.pythonanywhere.com']
 
 AUTH_USER_MODEL = 'Train_Website.MyUser'
 
@@ -113,6 +114,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_ROOT = 'staticfiles'
+# STATIC_ROOT = '/home/KevinWu/Kevin/professionalWebsite/Personal_Site/static_files'
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 
