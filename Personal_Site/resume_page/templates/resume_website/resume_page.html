@@ -14,15 +14,79 @@
 
     <title>Shi Xin (Kevin) Wu</title>
     <script>
-        $(document).ready(function (){
-            $("#title_next").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#about_me").offset().top
-                }, 1000);
-                $(".side_nav").fadeIn(1500);
+        function isScrolledIntoView(elem){
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+
+            var elemTop = $(elem).offset().top;
+            var middleTop = elemTop + $(elem).height() * .2;
+            var middleBot = elemTop + $(elem).height() * .8;
+
+            return ((docViewTop<=middleTop) && (middleTop<=docViewBottom) || (docViewTop<=middleBot) && (middleBot<=docViewBottom));
+        }
+
+        $(function scrollFunc() {
+            $(document).on("scroll", function() {
+                //For side Nav whole
+                if(isScrolledAfter(document.getElementById("about_me"))){
+                    console.log('Fade In')
+                    $(".side_nav").fadeIn(500);
+                    
+                }else{
+                    console.log('Fade Out')
+                    $(".side_nav").fadeOut(200);
+                }
+                
+                
+                // //For side Profile button
+                if(isScrolledIntoView(document.getElementById("about_me"))){
+                    document.getElementById("profile_nav").style.backgroundColor = "rgb(238, 74, 14)";
+                    document.getElementById("profile_nav").style.borderRadius = "5px";
+                }else{
+                    document.getElementById("profile_nav").style.backgroundColor = "#F2906A";
+                }
+
+                if(isScrolledIntoView(document.getElementById("experience"))){
+                    document.getElementById("experience_nav").style.backgroundColor = "rgb(238, 74, 14)";
+                    document.getElementById("experience_nav").style.borderRadius = "5px";
+                }else{
+                    document.getElementById("experience_nav").style.backgroundColor = "#F2906A";
+                }
+                
+                if(isScrolledIntoView(document.getElementById("skill"))){
+                    document.getElementById("skills_nav").style.backgroundColor = "rgb(238, 74, 14)";
+                    document.getElementById("skills_nav").style.borderRadius = "5px";
+                }else{
+                    document.getElementById("skills_nav").style.backgroundColor = "#F2906A";
+                }
+
+                if(isScrolledIntoView(document.getElementById("projects"))){
+                    document.getElementById("projects_nav").style.backgroundColor = "rgb(238, 74, 14)";
+                    document.getElementById("projects_nav").style.borderRadius = "5px";
+                }else{
+                    document.getElementById("projects_nav").style.backgroundColor = "#F2906A";
+                }
+
+                if(isScrolledIntoView(document.getElementById("contact"))){
+                    document.getElementById("contact_nav").style.backgroundColor = "rgb(238, 74, 14)";
+                    document.getElementById("contact_nav").style.borderRadius = "5px";
+                }else{
+                    document.getElementById("contact_nav").style.backgroundColor = "#F2906A";
+                }
+
+                
             });
         });
 
+        $(document).ready(function (){
+            $("#title_next").click(function (){
+                console.log('Arrow Clicked')
+                $('html, body').animate({
+                    scrollTop: $("#about_me").offset().top
+                }, 1000);
+            });
+        });
+        
         $(document).ready(function (){
             $("#profile_nav").click(function (){
                 $('html, body').animate({
@@ -74,22 +138,13 @@
             }
         }
 
-        function isScrolledIntoView(el) {
+        function isScrolledAfter(el) {
             var rect = el.getBoundingClientRect();
             return rect.top <= 100;
         }
 
-        $(function() {
-            $(document).on("mousewheel", function() {
-                if(isScrolledIntoView(document.getElementById("about_me"))){
-                    $(".side_nav").fadeIn(500);
-                }else{
-                    $(".side_nav").fadeOut(200);
-                }
-            });
-        });
-
         
+
     </script>
     
 </head>
@@ -409,6 +464,7 @@
             </div>
         </div>
     </div>
+    </div>
     <div id='contact' >
         <div class='section_header'>
             <t class='contact_header_title'  >Contact</t><br/>
@@ -432,7 +488,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
     </div>
 </div>

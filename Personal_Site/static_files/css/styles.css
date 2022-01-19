@@ -335,17 +335,20 @@ body {
     padding-top: 4%;
     display: grid;
     grid-gap: 5%;
-    height: 100%;
+    max-height: ;
     width: 100%;
     grid-template-columns: 30% 15% 25% 25%;
-    grid-template-areas: 
-    "a b b b";
+    grid-template-areas: "a b b b";
+    object-fit: contain;
 }
 
 .projects_a{
+    display: block;
     grid-area: a;  
     max-height: 20vh;
     max-width: 100%; 
+    padding-top: auto;
+    padding-bottom: auto;
 }
 
 .project_img{
@@ -362,7 +365,8 @@ body {
 .projects_b{
     grid-area: b;
     padding-right: 13%;
-    padding-top: 5vh;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #contact{
@@ -607,14 +611,15 @@ progress::-webkit-progress-bar {
     display: flex;
     flex-direction: row;
     padding: 1.2vw;
+    border-radius: 5px;
 }
 
 .nav_button:hover {
+    border-radius: 5px !important;
     display: flex;
     flex-direction: row;
     padding: 20px;
     background-color: rgb(238, 74, 14);
-    border-radius: 5px;
 }
 
 .nav_button i {
