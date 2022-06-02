@@ -10,12 +10,12 @@ def home_page(request):
         'educations':[
             {'name': 'New York University ', 'time': 'Sept 2019 - May 2023', 'program': 'Bachelor of Computer Science, Minor in Finance', 'description': 'My undergraduate studies at NYU revolves around learning advance programming concepts/skills such as Data Structures, Object Oriented Programming and Algorithms. While studying at NYU, I\'ve built a valuable network and took my first steps towards a professional career.', 'link': 'https://www.nyu.edu/', 'logo': '/static/images/NYULogo.png', 'size': 'Large'},
             {'name': 'Brooklyn Technical High School', 'time': 'Sept 2015 - Jun 2019', 'program': 'High School Diploma', 'description': 'Highschool is where I made some of the most important decisions of my life. Taking advantage of the major system, I studied mechanical engineering and fell in love with the programming aspect of the courses. While attending this school, I made some of my closest friends and started my first job.', 'link': 'https://www.bths.edu/', 'logo': '/static/images/BTHSLogo.png', 'size': 'Normal'}
-        ], 
-        
+        ],
+
     }
 
-    # env_url = 'http://kevinwu.pythonanywhere.com/'
-    env_url = 'http://127.0.0.1:8000'
+    env_url = 'http://kevinwu.pythonanywhere.com/'
+    # env_url = 'http://127.0.0.1:8000'
 
     career = [
             {'company': 'New York University', 'time': 'Aug 2020 - Present', 'position': 'Full Stack Web Developer & Teaching Assistant', 'location': 'Brooklyn, NY', 'description': 'As part of the Web-Development Team, I am building a new website for the course (used by over 1000 students every year). I also play a leadership role in the classroom setting, introducing students to various concepts and software used in engineering. Supervised and assist students in Semester-Long Design Projects.',  'link': 'https://eg.poly.edu/', 'logo': '/static/images/NYULogo.png', 'size': 'Large' },
