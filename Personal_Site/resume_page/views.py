@@ -10,12 +10,12 @@ def home_page(request):
         'educations':[
             {'name': 'New York University ', 'time': 'Sept 2019 - May 2023', 'program': 'Bachelor of Computer Science, Minor in Finance', 'description': 'My undergraduate studies at NYU revolves around learning advance programming concepts/skills such as Data Structures, Object Oriented Programming and Algorithms. While studying at NYU, I\'ve built a valuable network and took my first steps towards a professional career.', 'link': 'https://www.nyu.edu/', 'logo': '/static/images/NYULogo.png', 'size': 'Large'},
             {'name': 'Brooklyn Technical High School', 'time': 'Sept 2015 - Jun 2019', 'program': 'High School Diploma', 'description': 'Highschool is where I made some of the most important decisions of my life. Taking advantage of the major system, I studied mechanical engineering and fell in love with the programming aspect of the courses. While attending this school, I made some of my closest friends and started my first job.', 'link': 'https://www.bths.edu/', 'logo': '/static/images/BTHSLogo.png', 'size': 'Normal'}
-        ], 
-        
+        ],
+
     }
 
-    # env_url = 'http://kevinwu.pythonanywhere.com/'
-    env_url = 'http://127.0.0.1:8000'
+    env_url = 'http://kevinwu.pythonanywhere.com/'
+    # env_url = 'http://127.0.0.1:8000'
 
     career = [
             {'company': 'Bank Of New York Mellon', 'time': 'Jun 2022 - Present', 'position': 'START Technology Intern', 'location': 'New York, NY', 'description': 'Develop a tool to monitor firm-wide data delivery activities to collect data on, analyze and proactively prevent SLA misses. The Centralized SLA Monitoring Tool will alert and notify appropriate users to decrease risk and increase productivity throughout the firm.',  'link': 'https://www.bnymellon.com/', 'logo': '/static/images/BNYLogo.png', 'size': 'Squash' },
