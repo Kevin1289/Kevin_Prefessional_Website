@@ -79,8 +79,9 @@ def home_page(request):
         ('sign', 'capricorn'),
         ('day', 'today'),
     )
-    response = requests.post('https://aztro.sameerkumar.website/', params=params)
-    description = response.json()['description']
+    # response = requests.post('https://aztro.sameerkumar.website/', params=params)
+    description = "Temp Description"
+    # description = response.json()['description']
     return render(request, 'resume_website/resume_page.html', {'description':description, 'experiences': experiences, 'career_recent': career[:3], 'career_old': career[3:], 'projects': projects, 'language_skills':language_skills, 'programming_tools':programming_tools, 'software_skills':software_skills })
 
 def iFeeder(request):
